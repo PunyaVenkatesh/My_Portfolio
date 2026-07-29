@@ -109,8 +109,8 @@ a:hover{text-decoration:underline}
     <a href="#home" class="brand">PV</a>
     <nav>
       <a href="#about">About</a>
-      <a href="#projects">Projects</a>
       <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
       <a href="#skills">Skills</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -145,14 +145,14 @@ a:hover{text-decoration:underline}
       <div class="stat"><b>~70%</b><span>Fewer incorrect prioritisation decisions on the Agilent agent pipeline, measured in testing</span></div>
       <div class="stat"><b>6 agents / 7 tools</b><span>Smart Prioritization proof-of-concept built on IBM watsonx Orchestrate</span></div>
       <div class="stat"><b>2 live apps</b><span>Agentic AI systems deployed and publicly runnable</span></div>
-      <div class="stat"><b>5 IBM credentials</b><span>watsonx, generative AI and data security certifications</span></div>
+      <div class="stat"><b>4 agents / 5 tools</b><span>Agentic production dashboard proof-of-concept for Niagara Bottling</span></div>
     </div>
   </div>
 </section>
 
 <section id="about" class="section">
   <div class="container">
-    <p class="section-title">About</p>
+    <h2 class="big">About</h2>
     <p class="lead">
       I'm an AI engineer with more than a year of industry experience building multi-agent LLM systems for
       enterprise clients. My work spans the full path from problem framing to a working system: designing agent
@@ -194,10 +194,47 @@ a:hover{text-decoration:underline}
   </div>
 </section>
 
-<section id="projects" class="section alt">
+<section id="experience" class="section alt">
   <div class="container">
-    <p class="section-title">Projects</p>
-    <h2 class="big">Things you can actually run</h2>
+    <h2 class="big">Experience</h2>
+    <div class="timeline">
+
+      <div class="tl">
+        <h3>Associate AI Engineer · 3K Technologies</h3>
+        <p class="when">Nov 2025 – May 2026 · Bengaluru, India</p>
+        <ul>
+          <li>Designed and built a <strong>6-agent, 7-tool Smart Prioritization proof-of-concept</strong> on IBM watsonx Orchestrate for Agilent Technologies, automating task scheduling and ranking across service operations.</li>
+          <li>Cut incorrect prioritisation decisions by <strong>~70%</strong> — measured against a baseline on synthetic operational data — by embedding structured data validation checks into the agent pipeline.</li>
+          <li>Built enterprise post-quantum cryptography (PQC) readiness through hands-on delivery on IBM Guardium Quantum Safe Remediator and Cryptography Manager.</li>
+          <li>Prepared CBOM artifacts and client-facing demonstrations alongside the IBM Quantum Safe Engineering team, translating PQC capability into business-ready use cases.</li>
+        </ul>
+      </div>
+
+      <div class="tl">
+        <h3>Data Science Intern · 3K Technologies</h3>
+        <p class="when">May 2025 – Oct 2025 · Bengaluru, India</p>
+        <ul>
+          <li>Built a 4-agent, 5-tool agentic AI production dashboard proof-of-concept for Niagara Bottling with real-time monitoring, alert prioritisation and conversational, context-aware querying — cutting time-to-insight for plant managers by <strong>~70%</strong> in testing.</li>
+          <li>Delivered role-based views tailored to each production team, demonstrating how operational visibility could be scoped per role.</li>
+        </ul>
+      </div>
+
+      <div class="tl">
+        <h3>Machine Learning Intern · Nerastech</h3>
+        <p class="when">Feb 2025 – Apr 2025 · Bengaluru, India</p>
+        <ul>
+          <li>Built and fine-tuned optimised ML models for resource-constrained edge IoT devices, enabling predictive analysis and anomaly detection in limited-compute environments.</li>
+          <li>Completed hands-on industrial training in data analytics, feature engineering and core machine learning algorithms, applying them to real business case studies.</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="section">
+  <div class="container">
+    <h2 class="big">Projects</h2>
 
     <div class="cards">
 
@@ -250,44 +287,20 @@ a:hover{text-decoration:underline}
         </div>
       </article>
 
-    </div>
-  </div>
-</section>
-
-<section id="experience" class="section">
-  <div class="container">
-    <p class="section-title">Experience</p>
-    <h2 class="big">Where I've built</h2>
-    <div class="timeline">
-
-      <div class="tl">
-        <h3>Associate AI Engineer · 3K Technologies</h3>
-        <p class="when">Nov 2025 – May 2026 · Bengaluru, India</p>
+      <article class="card">
+        <h3>Crisis Response AI</h3>
+        <p class="sub">Multi-agent emergency response with validated hand-offs</p>
+        <div class="arch">Field report → Situation → Resources → Planner → Comms</div>
         <ul>
-          <li>Designed and built a <strong>6-agent, 7-tool Smart Prioritization proof-of-concept</strong> on IBM watsonx Orchestrate for Agilent Technologies, automating task scheduling and ranking across service operations.</li>
-          <li>Cut incorrect prioritisation decisions by <strong>~70%</strong> — measured against a baseline on synthetic operational data — by embedding structured data validation checks into the agent pipeline.</li>
-          <li>Built enterprise post-quantum cryptography (PQC) readiness through hands-on delivery on IBM Guardium Quantum Safe Remediator and Cryptography Manager.</li>
-          <li>Prepared CBOM artifacts and client-facing demonstrations alongside the IBM Quantum Safe Engineering team, translating PQC capability into business-ready use cases.</li>
+          <li>Four agents turn a raw field report into a severity assessment, resource allocation, time-phased action plan and public messaging.</li>
+          <li>Agents exchange Pydantic-validated objects rather than prose — an out-of-range severity or a plan with no 0–1h action is rejected outright.</li>
+          <li>On validation failure the model receives its own output plus the exact error for one correction pass, then fails loudly rather than passing a malformed assessment downstream.</li>
         </ul>
-      </div>
-
-      <div class="tl">
-        <h3>Data Science Intern · 3K Technologies</h3>
-        <p class="when">May 2025 – Oct 2025 · Bengaluru, India</p>
-        <ul>
-          <li>Built a 4-agent, 5-tool agentic AI production dashboard proof-of-concept for Niagara Bottling with real-time monitoring, alert prioritisation and conversational, context-aware querying — cutting time-to-insight for plant managers by <strong>~70%</strong> in testing.</li>
-          <li>Delivered role-based views tailored to each production team, demonstrating how operational visibility could be scoped per role.</li>
-        </ul>
-      </div>
-
-      <div class="tl">
-        <h3>Machine Learning Intern · Nerastech</h3>
-        <p class="when">Feb 2025 – Apr 2025 · Bengaluru, India</p>
-        <ul>
-          <li>Built and fine-tuned optimised ML models for resource-constrained edge IoT devices, enabling predictive analysis and anomaly detection in limited-compute environments.</li>
-          <li>Completed hands-on industrial training in data analytics, feature engineering and core machine learning algorithms, applying them to real business case studies.</li>
-        </ul>
-      </div>
+        <div class="tags"><span>LangChain</span><span>Groq LLaMA 3.3 70B</span><span>Pydantic</span><span>Multi-Agent</span><span>Streamlit</span></div>
+        <div class="links">
+          <a class="btn btn-small btn-outline" href="https://github.com/PunyaVenkatesh/crisis-response-ai" target="_blank" rel="noopener">Code</a>
+        </div>
+      </article>
 
     </div>
   </div>
@@ -295,8 +308,7 @@ a:hover{text-decoration:underline}
 
 <section id="skills" class="section alt">
   <div class="container">
-    <p class="section-title">Skills</p>
-    <h2 class="big">Toolkit</h2>
+    <h2 class="big">Skills</h2>
     <div class="skill-groups">
       <div class="skill-col">
         <h3>AI / ML &amp; GENAI</h3>
@@ -329,8 +341,7 @@ a:hover{text-decoration:underline}
 
 <section id="contact" class="section">
   <div class="container">
-    <p class="section-title">Contact</p>
-    <h2 class="big">Let's talk</h2>
+    <h2 class="big">Contact</h2>
     <p class="lead">Email is the fastest way to reach me. I'm open to AI engineering and data science roles in Melbourne and remote.</p>
     <div class="contact-cards">
       <a class="contact-card" href="mailto:punyavenkatesh24@gmail.com">
